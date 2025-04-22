@@ -107,3 +107,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 3000);
   }
 });
+
+    if (typeof finishQuiz === 'function') {
+      const oldFinishQuiz = finishQuiz;
+      finishQuiz = function () {
+        oldFinishQuiz();
+        setTimeout(() => window.location.href = 'summary.html', 1500);
+      }
+    }
+    
