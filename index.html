@@ -11,10 +11,10 @@
     <h1>The Sim Tech Quizlet</h1>
     <p>Please enter your name:</p>
     <input type="text" id="username" placeholder="Enter name">
-    <button onclick="startQuiz()">Start</button>
+    <button onclick="window.location.href='module.html'">Start</button>
   </div>
   <script>
-    function startQuiz() {
+    function window.location.href='module.html' {
       const name = document.getElementById('username').value;
       if (name.trim() !== '') {
         localStorage.setItem('quizUser', name);
